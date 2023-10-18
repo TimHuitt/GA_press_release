@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: white;
+    background: rgb(55, 55, 65);
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    background: black;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+.header-left {
+    display: flex;
+    height: 50px;
+    justify-content: flex-start;
+    align-items:center;
+}
+.header-image {
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.header-image img {
+    height: 25px;
+}
+.header-title {
+    display: inline-block;
+    font-size: 24px;
+}
+.header-options {
+    display: flex;
+    justify-content: flex-end;
+}
+.header-options ul > li {
+    display: inline-flex;
+    height: 50px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+.header-options ul > li:hover {
+    background: #222;
+}
+main {
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding-bottom: 50px;
+    text-align: center;
+    overflow-y: auto;
+}
+.bg {
+    position: fixed;
+    background: url(https://ga-website-production-herokuapp-com.global.ssl.fastly.net/packs/media/assets/images/home/hero-96e8680a0a0fbd88fdc3893e39fbb464.webp);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+}
+.main-header {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.main-header > p {
+    display: inline-flex;
+    margin: 20px;
+    padding: 0 10px;
+    font-size: 34px;
+    background: black;
+}
+.main-header > p:last-child {
+    font-size: 24px;
+}
+.main-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    margin: 50px 0;
+    padding: 20px 20px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    background: lightyellow;
+    box-sizing: border-box;
+    filter: drop-shadow(20px 20px 15px #222);
+}
+
+.main-container > p {
+    padding-top: 20px;
+}
+.main-container > p:first-child {
+    font-size: 24px
+}
+.main-container > p:nth-child(2) {
+    color: rgb(226,28,35);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-container > ul li{
+    padding-top: 10px;
+}
+.main-container > .img-container {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    z-index: -1;
+}
+
+.img-container > img {
+    width: 200px;
+    height: 200px;
+    filter: invert(50%);
+}
